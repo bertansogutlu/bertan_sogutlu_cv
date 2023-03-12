@@ -56,4 +56,37 @@
     margin-left: 1rem;
 }
 
+.Skills {
+    display: flex;
+    padding: 6rem 15rem;
+}
+
+.Skills h2 {
+    width: 30%;
+    font-size: 3rem;
+    color: #4731D3;
+}
+
+.skills-container {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.Skills .card {
+    width: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.Skills img {
+    width: 7.5rem;
+    border-radius: 0.5rem;
+}
+
+.Skills p {
+    font-size: 1.5rem;
+    padding: 1rem;
+  }
 
