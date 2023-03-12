@@ -1,4 +1,8 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub, faLinkedin } from '@fortawesome/fontawesome-free-brands';
+
+
 
 export default function Header() {
     return (
@@ -9,8 +13,8 @@ export default function Header() {
                     <h2>I am a Fronted<br/>Developer...</h2>
                     <p>...who likes to craft solid and scalable frontend products with great user experiences.</p>
                     <div className='buttons'>
-                        <button>Github</button>
-                        <button>Linkedin</button>
+                        <button><FontAwesomeIcon icon={faGithub}/> Github</button>
+                        <button><FontAwesomeIcon icon={faLinkedin}/> Linkedin</button>
                     </div>
                 </div>
                 <div className='header-img'>
