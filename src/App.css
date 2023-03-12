@@ -1,0 +1,51 @@
+.App {
+    width: 1440px;
+    background-color: #FFFFFF;
+}
+
+.Header {
+    background: linear-gradient(to right,
+            #4731D3 0%,
+            #4731D3 70%,
+            #CBF281 30%,
+            #CBF281 100%);
+}
+
+.Header h1 {
+    font-size: 2rem;
+    color: #CBF281;
+    padding: 2rem 15rem;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 15rem;
+    padding-bottom: 6rem;
+}
+
+.header-container h2 {
+    font-size: 2rem;
+    color: #CBF281;
+
+}
+
+.header-container p {
+    color: #ffffff;
+    padding: 1.5rem 0;
+}
+
+.header-container img {
+    border-radius: 1rem;
+}
+
+.header-container button {
+    background-color: #ffffff;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.header-container  button+button {
+    border: black solid 1px;
+    margin-left: 1rem;
+}
