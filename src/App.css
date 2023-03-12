@@ -181,3 +181,23 @@
     padding-right: 1rem;
  }
 
+.Footer {
+    text-align: center;
+}
+
+ .Footer h2 {
+    font-size: 2rem;
+    color: #4731D3;
+    padding-top: 4rem;
+}
+
+.Footer p {
+    padding: 1rem;
+}
+
+.Footer .icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem 0;
+}
