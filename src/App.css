@@ -36,7 +36,7 @@
 
 .header-container p {
     font-size: 1.5rem;
-    color: #ffffff;
+    color: #FFFFFF;
     padding: 1.5rem 0;
 }
 
@@ -45,13 +45,13 @@
 }
 
 .header-container button {
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
 }
 
-.header-container  button+button {
+.header-container button+button {
     border: black solid 1px;
     margin-left: 1rem;
 }
@@ -88,8 +88,47 @@
 .Skills p {
     font-size: 1.5rem;
     padding: 1rem;
-  }
+}
 
 
 
-  
+.Profile {
+    padding: 6rem 15rem;
+    background-color: #4731D3;
+}
+
+.Profile h2 {
+    font-size: 3rem;
+    color: #CBF281;
+    padding-bottom: 2rem;
+}
+
+.Profile h3 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    color: #FFFFFF;
+}
+
+.profile-container span {
+    color: black;
+}
+
+.profile-container div {
+    width: 30%;
+}
+
+.profile-container p {
+    padding: 1rem 0;
+    line-height: 1.5rem;
+}
+
+.profile-container img {
+    border-radius: 1rem;
+}
+
