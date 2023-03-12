@@ -5,7 +5,7 @@ export default function Header() {
         <div className='Header'>
             <h1>bertan</h1>
             <container className='header-container'>
-                <div>
+                <div className='header-text'>
                     <h2>I am a Fronted<br/>Developer...</h2>
                     <p>...who likes to craft solid and scalable frontend products with great user experiences.</p>
                     <div className='buttons'>

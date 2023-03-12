@@ -14,23 +14,28 @@
 .Header h1 {
     font-size: 2rem;
     color: #CBF281;
-    padding: 2rem 15rem;
+    padding: 4rem 15rem;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
-    padding: 2rem 15rem;
-    padding-bottom: 6rem;
+    align-items: flex-end;
+    padding: 0 15rem;
+    padding-bottom: 10rem;
+}
+
+.header-text {
+    width: 50%;
 }
 
 .header-container h2 {
-    font-size: 2rem;
+    font-size: 3rem;
     color: #CBF281;
-
 }
 
 .header-container p {
+    font-size: 1.5rem;
     color: #ffffff;
     padding: 1.5rem 0;
 }
@@ -41,11 +46,14 @@
 
 .header-container button {
     background-color: #ffffff;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
 }
 
 .header-container  button+button {
     border: black solid 1px;
     margin-left: 1rem;
 }
+
+
