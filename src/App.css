@@ -49,11 +49,7 @@
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-}
-
-.header-container button+button {
-    border: black solid 1px;
-    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 .Skills {
@@ -131,4 +127,57 @@
 .profile-container img {
     border-radius: 1rem;
 }
+
+
+.Projects {
+    padding: 6rem 15rem;
+    background-color: #CBF281;
+}
+
+.Projects h2 {
+    font-size: 3rem;
+    color: #4731D3;
+    padding-bottom: 2rem;
+}
+
+.Projects h3 {
+    font-size: 2rem;
+    color: #4731D3;
+}
+
+.project-container {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+.project-container img {
+    border-radius: 1rem 0 0 1rem;
+}
+
+.project-right {
+   padding: 2rem;
+}
+
+.project-right p {
+    padding: 2rem 0;
+ }
+
+.project-container button {
+    background-color: #4731D3;
+    color: #FFFFFF;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+}
+
+.project-right .anchors {
+    padding: 2rem 0;
+ }
+
+.project-right a {
+    padding-right: 1rem;
+ }
 
