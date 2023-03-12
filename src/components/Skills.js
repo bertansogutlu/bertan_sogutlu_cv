@@ -12,27 +12,27 @@ export default function Skills() {
             <h2>Skills</h2>
             <div className='skills-container'>
                 <div className='card'>
-                    <img src={javascript} />
+                    <img src={javascript} alt='javascript'/>
                     <p>JAVASCRIPT</p>
                 </div>
                 <div className='card'>
-                    <img src={nodejs} />
+                    <img src={nodejs} alt='nodejs'/>
                     <p>NODE</p>
                 </div>
                 <div className='card'>
-                    <img src={react} />
+                    <img src={react} alt='react'/>
                     <p>REACT</p>
                 </div>
                 <div className='card'>
-                    <img src={vscode} />
+                    <img src={vscode} alt='vscode'/>
                     <p>VS CODE</p>
                 </div>
                 <div className='card'>
-                    <img src={redux} />
+                    <img src={redux} alt='redux'/>
                     <p>REDUX</p>
                 </div>
                 <div className='card'>
-                    <img src={figma} />
+                    <img src={figma} alt='figma'/>
                     <p>FIGMA</p>
                 </div>
             </div>
