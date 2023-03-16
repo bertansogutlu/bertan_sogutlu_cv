@@ -4,48 +4,47 @@
     background-color: #FFFFFF;
 }
 
-.Header {
+header {
+    padding: 6rem 15rem;
     background: linear-gradient(to right,
-            #4731D3 0%,
-            #4731D3 70%,
-            #CBF281 30%,
-            #CBF281 100%);
+    #4731D3 0%,
+    #4731D3 70%,
+    #CBF281 30%,
+    #CBF281 100%);
 }
 
-.Header h1 {
+header h1 {
     font-size: 2rem;
     color: #CBF281;
-    padding: 4rem 15rem;
+    padding-bottom: 4rem;
 }
 
-.header-container {
+header .container {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding: 0 15rem;
-    padding-bottom: 10rem;
 }
 
-.header-text {
+header .text {
     width: 50%;
 }
 
-.header-container h2 {
+header h2 {
     font-size: 3rem;
     color: #CBF281;
 }
 
-.header-container p {
+header p {
     font-size: 1.5rem;
     color: #FFFFFF;
     padding: 1.5rem 0;
 }
 
-.header-container img {
+header img {
     border-radius: 1rem;
 }
 
-.header-container button {
+header button {
     background-color: #FFFFFF;
     font-size: 1rem;
     padding: 0.5rem 1rem;
