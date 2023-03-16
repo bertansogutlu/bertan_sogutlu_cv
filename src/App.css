@@ -45,6 +45,7 @@ header p {
 }
 
 header img {
+    width: 35%;
     border-radius: 1rem;
 }
 

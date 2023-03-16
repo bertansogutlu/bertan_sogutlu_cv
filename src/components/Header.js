@@ -26,7 +26,7 @@ export default function Header() {
             </button>
           </div>
         </div>
-        <img src="https://picsum.photos/id/1/350/375" alt="cv-img" />
+        <img src="https://picsum.photos/id/1/500/500" alt="cv-img" />
       </div>
     </header>
   );
