@@ -17,7 +17,7 @@ export default function Header() {
             ...who likes to craft solid and scalable frontend products with
             great user experiences.
           </p>
-          <div>
+          <div className="buttons">
             <button>
               <FontAwesomeIcon icon={faGithub} /> Github
             </button>

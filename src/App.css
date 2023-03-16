@@ -1,11 +1,14 @@
 .App {
-    width: 1440px;
+    max-width: 1440px;
+    min-width: 330px;
     margin:0 auto;
     background-color: #FFFFFF;
 }
 
 header {
-    padding: 6rem 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: linear-gradient(to right,
     #4731D3 0%,
     #4731D3 70%,
@@ -21,6 +24,8 @@ header h1 {
 }
 
 header .container {
+    padding: 4rem 0;
+    width: 65%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -31,10 +36,17 @@ header .child {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 50%;
+    width: 60%;
 }
 
+@media(max-width: 1230px) {
+    header .child {
+      order: 1;
+    }
+  }
+
 header h2 {
+    padding-top: 2rem;
     font-size: 3rem;
     color: #CBF281;
 }
@@ -45,8 +57,40 @@ header p {
 }
 
 header img {
-    width: 35%;
+    width: 20rem;
     border-radius: 1rem;
+}
+
+@media(max-width: 660px) {
+
+    header .container {
+        width: 80%;
+    }
+
+    header img{
+        width: 15rem;
+    }
+  }
+
+header .buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+@media(max-width: 640px) {
+
+    header {
+        background: linear-gradient(to right,
+        #4731D3 0%,
+        #4731D3 90%,
+        #CBF281 10%,
+        #CBF281 100%);
+    }
+  }
+
+header .buttons {
+    display: flex;
+    gap: 1rem;
 }
 
 header button {
@@ -54,7 +98,6 @@ header button {
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    margin-right: 1rem;
 }
 
 .Skills {
