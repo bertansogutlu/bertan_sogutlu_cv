@@ -11,8 +11,8 @@ function App() {
     <div className="App">
       <Header />
       <Skills />
-      {/* <Profile />
-      <Projects />
+      <Profile />
+      {/* <Projects />
       <Footer /> */}
     </div>
   );
