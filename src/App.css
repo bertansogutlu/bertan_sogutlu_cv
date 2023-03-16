@@ -61,32 +61,10 @@ header img {
     border-radius: 1rem;
 }
 
-@media(max-width: 660px) {
-
-    header .container {
-        width: 80%;
-    }
-
-    header img{
-        width: 15rem;
-    }
-  }
-
 header .buttons {
     display: flex;
     gap: 1rem;
 }
-
-@media(max-width: 640px) {
-
-    header {
-        background: linear-gradient(to right,
-        #4731D3 0%,
-        #4731D3 90%,
-        #CBF281 10%,
-        #CBF281 100%);
-    }
-  }
 
 header .buttons {
     display: flex;
@@ -102,24 +80,34 @@ header button {
 
 .Skills {
     display: flex;
-    padding: 6rem 15rem;
+    justify-content: center;
+}
+
+.Skills .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 65%;
+    padding: 4rem 0;
 }
 
 .Skills h2 {
-    width: 30%;
+    padding-bottom: 2rem;
+    width: 10rem;
     font-size: 3rem;
     color: #4731D3;
 }
 
-.skills-container {
-    width: 70%;
+.Skills .child {
+    width: 40rem;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     gap: 2rem;
 }
 
 .Skills .card {
-    width: 40%;
+    width: 16rem;
     display: flex;
     align-items: center;
 }
@@ -249,3 +237,22 @@ header button {
     gap: 1rem;
     padding: 1rem 0;
 }
+
+@media(max-width: 640px) {
+
+    header .container {
+        width: 80%;
+    }
+
+    header img{
+        width: 15rem;
+    }
+
+    header {
+        background: linear-gradient(to right,
+        #4731D3 0%,
+        #4731D3 90%,
+        #CBF281 10%,
+        #CBF281 100%);
+    }
+  }
