@@ -14,7 +14,7 @@ export const data = {
   },
   skills: {
     hTwo: 'Skills',
-    skill: [
+    allSkills: [
         {name: 'JAVASCRIPT', img: javascript},
         {name: 'NODE', img: nodejs},
         {name: 'REACT', img: react},
@@ -23,5 +23,5 @@ export const data = {
         {name: 'FIGMA', img: figma}
 ]
   },
-  
+
 };
