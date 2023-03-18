@@ -1,6 +1,6 @@
 .App {
     max-width: 1440px;
-    min-width: 330px;
+    min-width: 370px;
     margin:0 auto;
     background-color: #FFFFFF;
 }
@@ -38,12 +38,6 @@ header .child {
     gap: 2rem;
     width: 60%;
 }
-
-@media(max-width: 1230px) {
-    header .child {
-      order: 1;
-    }
-  }
 
 header h2 {
     padding-top: 2rem;
@@ -181,10 +175,18 @@ header button {
     border-radius: 1rem;
 }
 
-
 .Projects {
-    padding: 6rem 15rem;
+    display: flex;
+    justify-content: center;
     background-color: #CBF281;
+}
+
+.Projects .container {
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    padding: 4rem 0;
+    gap: 2rem;
 }
 
 .Projects h2 {
@@ -193,44 +195,52 @@ header button {
     padding-bottom: 2rem;
 }
 
+.Projects .child {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #FFFFFF;
+    border-radius: 1rem;
+}
+
 .Projects h3 {
     font-size: 2rem;
     color: #4731D3;
 }
 
-.project-container {
-    display: flex;
-    background-color: #FFFFFF;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
-}
-
-.project-container img {
+.Projects img {
+    width: 20rem;
     border-radius: 1rem 0 0 1rem;
 }
 
-.project-right {
-   padding: 2rem;
+.Projects .text {
+    padding: 2rem;
+   width: 30rem;
 }
 
-.project-right p {
+.Projects p {
     padding: 2rem 0;
  }
 
-.project-container button {
+.Projects .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Projects button {
     background-color: #4731D3;
     color: #FFFFFF;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     border-radius: 1rem;
-    margin-right: 1rem;
 }
 
-.project-right .anchors {
-    padding: 2rem 0;
+.Projects .anchors {
+    padding-top: 2rem;
  }
 
-.project-right a {
+.Projects a {
     padding-right: 1rem;
  }
 
@@ -238,7 +248,7 @@ header button {
     text-align: center;
 }
 
- .Footer h2 {
+.Footer h2 {
     font-size: 2rem;
     color: #4731D3;
     padding-top: 4rem;
@@ -255,6 +265,16 @@ header button {
     padding: 1rem 0;
 }
 
+@media(max-width: 1230px) {
+    header .child {
+      order: 1;
+    }
+    .Projects img {
+        width: 20rem;
+        border-radius: 1rem 0 0 0;
+    }
+  }
+
 @media(max-width: 640px) {
 
    .container {
@@ -269,6 +289,10 @@ header button {
         width: 15rem;
     }
 
+    .Projects img {
+        width: 15rem;
+    }
+
     header {
         background: linear-gradient(to right,
         #4731D3 0%,
@@ -278,3 +302,11 @@ header button {
     }
 
   }
+
+  @media(max-width: 370px) {
+
+    .Projects img {
+        border-radius: 1rem 1rem 0 0;
+    }
+ 
+   }
