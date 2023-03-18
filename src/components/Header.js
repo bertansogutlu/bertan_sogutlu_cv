@@ -2,20 +2,19 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/fontawesome-free-brands";
 
-export default function Header() {
+export default function Header({header}) {
   return (
     <header>
       <div className="container">
-        <h1>bertan</h1>
+        <h1>{header.hOne}</h1>
         <div className="child">
           <h2>
-            I am a Fronted
+          {header.hTwoFirstPart}
             <br />
-            Developer...
+            {header.hTwoSecondPart}
           </h2>
           <p>
-            ...who likes to craft solid and scalable frontend products with
-            great user experiences.
+          {header.p}
           </p>
           <div className="buttons">
             <button>
