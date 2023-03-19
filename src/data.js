@@ -59,4 +59,9 @@ export const data = {
       }
     ],
   },
+  footer: {
+    hTwo: "Send me a message!",
+    text: "Got a question or proposal, or just want to say hello? Go ahead.",
+    email: "bertansogutlu@gmail.com"
+  }
 };

@@ -7,12 +7,12 @@ import {
 } from "@fortawesome/fontawesome-free-brands";
 import { faAt } from "@fortawesome/free-solid-svg-icons";
 
-export default function Footer() {
+export default function Footer({footer}) {
   return (
     <div className="Footer">
-      <h2>Send me a message!</h2>
-      <p>Got a question or proposal, or just want to say hello? Go ahead.</p>
-      <a href="https://www.wikipedia.org/">almilasucode@gmail.com</a>
+      <h2>{footer.hTwo}</h2>
+      <p>{footer.text}</p>
+      <a href = {`mailto: ${footer.email}`}>{footer.email}</a>
       <div className="icons">
         <FontAwesomeIcon icon={faTwitter} />
         <FontAwesomeIcon icon={faGithub} />
