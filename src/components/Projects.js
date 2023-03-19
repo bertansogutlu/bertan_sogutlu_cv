@@ -1,54 +1,31 @@
 import React from "react";
 
-export default function Projects() {
+export default function Projects({ projects }) {
   return (
     <section className="Projects">
       <div className="container">
-        <h2>Projects</h2>
-        <div className="child">
-          <img src="https://picsum.photos/id/1/360/360" alt="projects-1-img" />
-          <div className="text">
-            <h3>Workintech</h3>
-            <p>
-              A simple, customizable, minimal setup cookie plugin that allows
-              your users to select which cookies to accept or decline. This was
-              created with vanilla JS, SCSS and Parcel Bundler and is available
-              as a NPM package and the git repository makes any type of
-              customization to code and themes possible.
-            </p>
-            <div className="buttons">
-              <button>React</button>
-              <button>Redux</button>
-              <button>Vercel</button>
-            </div>
-            <div className="anchors">
-              <a href="https://www.wikipedia.org/">Visit Site</a>
-              <a href="https://www.wikipedia.org/">Github</a>
-            </div>
-          </div>
-        </div>
-        <div className="child">
-          <img src="https://picsum.photos/id/1/360/360" alt="projects-1-img" />
-          <div className="text">
-            <h3>Journey</h3>
-            <p>
-              A simple, customizable, minimal setup cookie plugin that allows
-              your users to select which cookies to accept or decline. This was
-              created with vanilla JS, SCSS and Parcel Bundler and is available
-              as a NPM package and the git repository makes any type of
-              customization to code and themes possible.
-            </p>
-            <div className="buttons">
-              <button>React</button>
-              <button>Redux</button>
-              <button>Vercel</button>
-            </div>
-            <div className="anchors">
-              <a href="https://www.wikipedia.org/">Visit Site</a>
-              <a href="https://www.wikipedia.org/">Github</a>
+        <h2>{projects.hTwo}</h2>
+        {projects.allProjects.map((project) => (
+          <div className="child" key={project.name}>
+            <img src={project.img} alt={project.name} />
+            <div className="text">
+              <h3>{project.name}</h3>
+              <p>{project.text}</p>
+              <div className="buttons">
+                {project.buttons.map((button) => (
+                  <button>{button}</button>
+                ))}
+              </div>
+              <div className="anchors">
+                {project.anchors.map((anchor) => (
+                  <a href={anchor.link} key={anchor.name}>
+                    {anchor.name}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
