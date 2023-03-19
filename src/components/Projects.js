@@ -13,7 +13,7 @@ export default function Projects({ projects }) {
               <p>{project.text}</p>
               <div className="buttons">
                 {project.buttons.map((button) => (
-                  <button>{button}</button>
+                  <button key={button}>{button}</button>
                 ))}
               </div>
               <div className="anchors">

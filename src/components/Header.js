@@ -14,7 +14,7 @@ export default function Header({header}) {
             {header.hTwoSecondPart}
           </h2>
           <p>
-          {header.p}
+          {header.text}
           </p>
           <div className="buttons">
             <button>

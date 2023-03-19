@@ -9,9 +9,9 @@ export const data = {
   header: {
     hOne: "Bertan",
     img: { name: "headerPhoto", src: "https://picsum.photos/id/1/500/500" },
-    hTwoFirstPart: "I am a Fronted",
+    hTwoFirstPart: "I am a Frontend",
     hTwoSecondPart: "Developer...",
-    p: "...who likes to craft solid and scalable frontend products with great user experiences.",
+    text: "...who likes to craft solid and scalable frontend products with great user experiences.",
   },
   skills: {
     hTwo: "Skills",
