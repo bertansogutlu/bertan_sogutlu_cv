@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function App() {
-  const [resData,setResData] = useState(data);
+  const [resData,setResData] = useState();
 
   useEffect(() => {
     axios.post("https://reqres.in/api/users", data)
@@ -24,11 +24,14 @@ function App() {
   },[])
   return (
     <div className="App">
+      { resData && 
+      <>
       <Header header={resData.header}/>
       <Skills skills={resData.skills}/>
       <Profile profile={resData.profile}/>
       <Projects projects={resData.projects}/>
       <Footer footer={resData.footer}/>
+      </>}
     </div>
   );
 }
