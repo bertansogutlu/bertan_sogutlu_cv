@@ -17,7 +17,7 @@ export default function Header({header}) {
           {header.text}
           </p>
           <div className="buttons">
-            <button>
+            <button onClick={() => window.open('https://www.wikipedia.org/', '_blank')}>
               <FontAwesomeIcon icon={faGithub} /> Github
             </button>
             <button>
